@@ -1,0 +1,39 @@
+site:github.com intext:"{target_name}" + "BEGIN OPENSSH PRIVATE KEY" 
+site:{target_site} ext:nix "BEGIN OPENSSH PRIVATE KEY"
+site:{target_site} inurl:home.htm intitle:1766
+site:{target_site} intitle:"SSL Network Extender Login" -checkpoint.com
+site:{target_site} intext:"siemens" & inurl:"/portal/portal.mwsl"
+site:{target_site} intext:GlobalProtect Portal inurl:/global-protect  intitle:GlobalProtect Portal
+site:{target_site} inurl:"cgi-bin/koha"
+site:{target_site} intext:"aws_access_key_id" | intext:"aws_secret_access_key" filetype:json | filetype:yaml
+site:{target_site} intext:"proftpd.conf" "index of"
+site:{target_site} intitle:index of /etc/ssh
+site:{target_site} "START test_database" ext:log
+site:{target_site} "Header for logs at time" ext:log
+site:{target_site} intext:"dhcpd.conf" "index of"
+site:uat.{target_site} * inurl:login
+site:preprod.{target_site} * inurl:login
+site:{target_site} intitle:"/zircote/swagger-php"
+site:{target_site} intitle:index of /etc/openldap
+site:{target_site} intitle:"index of" setting.php
+inurl:pastebin intitle:mastercard + "{target_name}"
+site:{target_site} "configmap.yaml" | "config.yaml" | "*-config.yaml" intitle:"index of"
+site:{target_site} intitle:Index of "/etc/network" | "/etc/cni/net.d"
+site:{target_site} "rbac.yaml" | "role.yaml" | "rolebinding.yaml" | "*-rbac.yaml" intitle:"index of"
+site:{target_site} intitle:"FileCatalyst file transfer solution"
+site:{target_site} allintitle:"ITRS OP5 Monitor"
+site:{target_site} intitle: index of /concrete/Password
+site:{target_site} inurl:"wa.exe?TICKET"
+site:{target_site} inurl:invoice
+site:{target_site} intext:"Welcome to XAMPP for *" intitle:"Welcome to XAMPP" inurl:/dashboard
+site:{target_site} intext:apache + mariadb + php + perl intext:"welcome to xampp for *"
+site:{target_site} intitle:"welcome to xampp"
+inurl:pastebin {target_name} mastercard
+inurl:pastebin {target_name} "VISA"
+inurl:pastebin {target_name} "cpanel"
+inurl:pastebin {target_name} "SHODAN_API_KEY"
+inurl:pastebin {target_name} "admin password"
+site:pastebin.com "*@{target_site} password"
+site:{target_site} intitle:"Index of /confidential"
+site:{target_site} index of: "confidential" "uploads"
+site:{target_site} "Confidential" ext:pdf | ext:doc | ext:xlsx
